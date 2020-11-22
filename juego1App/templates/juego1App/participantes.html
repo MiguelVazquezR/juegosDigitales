@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div>
+    <h1>Esta es la lista de los participantes para el juego1</h1>
+    <!-- En un futuro filtrar por sorteo mensual. Actualmente salen de todos los meses -->
+    {% for participante in lista_participantes %}
+        <ul>
+            <li>{{participante.nombre}}</li>
+        </ul>
+    {% endfor %}
+    
+</div>
+
+{% endblock %}

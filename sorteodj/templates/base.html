@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load staticfiles %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <title>Diversiones Digitales</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'Inicio' %}">Inicio</a></li>
+                <li><a href="{% url 'Juego1' %}">Lista posicionable</a></li>
+                <li><a href="{% url 'Quiniela' %}">Quiniela</a></li>
+                <li><a href="#">Otro juego que aún no se me ocurre</a></li>
+            </ul>
+        </nav>
+    </header>
+    {% block content %}
+
+    {% endblock %} 
+    <footer>
+        <div>
+            <a href="#">Política de privacidad</a> ·
+            <a href="#">Aviso legal</a> ·
+            <a href="#">Cookies</a>
+        </div>
+    </footer>
+    <script src="{% static 'vendor/jquery/jquery-3.5.1.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
+

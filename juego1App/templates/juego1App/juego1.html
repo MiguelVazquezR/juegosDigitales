@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div>
+    <h1>Esta es la vista para el juego1</h1>
+    <a href="{% url 'Registrar' %}">Registrar Pase</a>
+    <a href="{% url 'Resultados' %}">Ver resultados</a>
+    <a href="{% url 'Participantes' %}">Ver participantes</a>
+</div>
+
+
+<!-- <a class="link-oculto" href="{% url 'Registrar' %}">aqui</a> -->
+
+
+{% endblock %}

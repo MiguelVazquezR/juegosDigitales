@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Gracias por participar! Te deseamos mucho éxito {{nombre_participante}}</h1>
+<a href="{% url 'Participantes' %}">Ver lista de participantes</a>
+<a href="{% url 'Inicio' %}">Volver al inicio</a>
+
+{% endblock %}
